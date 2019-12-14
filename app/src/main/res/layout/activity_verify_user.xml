@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VerifyUser">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:textSize="20sp"
+        android:text="Select the traffic lights"/>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:numColumns="3"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"/>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingHorizontal="50dp">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'm not a Robot"
+            android:id="@+id/checkbox"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="72dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/refresh"
+            android:id="@+id/refresh"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="40dp"
+        android:text="VERIFY"
+        android:id="@+id/verify_btn"/>
+
+
+</LinearLayout>
